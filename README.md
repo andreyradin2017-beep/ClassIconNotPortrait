@@ -1,16 +1,16 @@
 # ClassIconNotPortrait
 
-WoW 3.3.5 (Sirus) addon. Replaces the default portrait in stock unit frames (player/target/focus/party) with the class icon for player units.
+Аддон для WoW 3.3.5 (Sirus). Меняет стандартный портрет во встроенных юнит-фреймах (игрок, цель, фокус, группа) на иконку класса для игроков.
 
-## How it works
+## Как работает
 
-Hooks the global `UnitFramePortrait_Update` function and, for player units, loads `Interface/TargetingFrame/UI-Classes-Circles` with coordinates from the standard `CLASS_ICON_TCOORDS` table. Non-player units keep their normal portrait.
+Перехватывает глобальную функцию `UnitFramePortrait_Update`. Для игроков загружает текстуру `Interface/TargetingFrame/UI-Classes-Circles` с координатами из стандартной таблицы `CLASS_ICON_TCOORDS`. Не-игрокам оставляет обычный портрет.
 
-## Files
+## Файлы
 
 - `ClassIconNotPortrait.toc`
 - `ClassIconNotPortrait.lua`
 
-## Requirements
+## Требования
 
-- Interface `30300` (WotLK / Sirus client).
+- Interface `30300` (клиент WotLK / Sirus).
